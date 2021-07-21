@@ -51,7 +51,8 @@ def handle_message(event):
             sticker_message)
         return
 
-
+    # rule-based 機器人，規則性的，現在做的就是rule-based
+    # NLP == True AI
     if msg == '你吃飯了嗎':
         r = '還沒'
     elif msg in ['hi', 'Hi', '嗨']:
