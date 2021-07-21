@@ -45,6 +45,8 @@ def handle_message(event):
         r = 'hi'
     elif msg == '你是誰':
         r = '我是大胖機器人'
+    elif '胖' in msg:
+        r = '你最胖'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
